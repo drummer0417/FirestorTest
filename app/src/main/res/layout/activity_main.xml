@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edit_text_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Id"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edit_text_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edit_text_brand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Brand"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edit_text_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Category"
+        android:inputType="number" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onAddNote"
+        android:text="Add" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onLoadArticles"
+        android:text="Load" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onLoadFromCategory"
+        android:text="Load From Category" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onLoadByCategory"
+        android:text="Load By Category" />
+
+
+
+    <!--    <Button-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:onClick="onUpdateDescription"-->
+    <!--        android:text="Update description" />-->
+
+    <!--    <Button-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:onClick="onDeleteDescription-->
+    <!-- "-->
+    <!--        android:text="Delete description" />-->
+
+    <!--    <Button-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:onClick="onDeleteNote"-->
+    <!--        android:text="Delete article" />-->
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/text_view_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
